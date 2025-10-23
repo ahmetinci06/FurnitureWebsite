@@ -103,24 +103,16 @@ export default function ProductDetail() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Product Image */}
           <div className="relative">
-            <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 bg-primary-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-16 h-16 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <p className="text-sm text-gray-500 font-medium">
-                    {product.name}
-                  </p>
-                  <p className="text-xs text-gray-400 mt-2">
-                    Görsel yakında eklenecek
-                  </p>
-                </div>
-              </div>
-              {/* Image placeholder - will show actual images when uploaded */}
-              {/* <Image src={product.image_url} alt={product.name} fill className="object-cover" /> */}
+            <div className="relative aspect-square bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
+              <Image 
+                src={product.image_url} 
+                alt={product.name} 
+                fill 
+                className="object-cover"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                }}
+              />
             </div>
           </div>
 
@@ -257,13 +249,15 @@ export default function ProductDetail() {
                   className="card-product group"
                 >
                   <div className="relative aspect-product bg-gray-100">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center">
-                        <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                    </div>
+                    <Image 
+                      src={relProduct.image_url} 
+                      alt={relProduct.name} 
+                      fill 
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                      }}
+                    />
                   </div>
                   <div className="p-4">
                     <h3 className="font-semibold text-sm text-gray-900 mb-2 text-clamp-2 group-hover:text-primary-600 transition-colors">

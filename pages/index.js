@@ -109,20 +109,15 @@ export default function Home() {
                 >
                   {/* Product Image */}
                   <div className="relative aspect-product bg-gray-100 overflow-hidden">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center p-4">
-                        <div className="w-24 h-24 bg-primary-100 rounded-full mx-auto mb-2 flex items-center justify-center">
-                          <svg className="w-12 h-12 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                          </svg>
-                        </div>
-                        <p className="text-xs text-gray-500">
-                          {product.name}
-                        </p>
-                      </div>
-                    </div>
-                    {/* Image placeholder - will be replaced with actual images */}
-                    {/* <Image src={product.image_url} alt={product.name} fill className="object-cover group-hover:scale-105 transition-transform duration-300" /> */}
+                    <Image 
+                      src={product.image_url} 
+                      alt={product.name} 
+                      fill 
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                      }}
+                    />
                   </div>
 
                   {/* Product Info */}
