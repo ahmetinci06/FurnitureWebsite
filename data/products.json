@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Modern Grey Sofa Set",
+    "category": "living-room",
+    "price": 85000,
+    "description": "Contemporary sofa set with soft fabric and solid wood legs.",
+    "image_url": "/images/sofa_set_1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Luxury Bedroom Set",
+    "category": "bedroom",
+    "price": 250000,
+    "description": "Elegant bed with LED details and spacious wardrobe.",
+    "image_url": "/images/bedroom_1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Outdoor Rattan Dining Set",
+    "category": "outdoor",
+    "price": 100000,
+    "description": "Weather-resistant rattan dining set with soft cushions.",
+    "image_url": "/images/outdoor_set_1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Classic Wooden Dining Table",
+    "category": "dining-room",
+    "price": 45000,
+    "description": "Solid oak dining table with 6 matching chairs.",
+    "image_url": "/images/dining_table_1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Minimalist TV Unit",
+    "category": "living-room",
+    "price": 32000,
+    "description": "Sleek TV stand with ample storage and cable management.",
+    "image_url": "/images/tv_unit_1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "King Size Bed Frame",
+    "category": "bedroom",
+    "price": 78000,
+    "description": "Upholstered bed frame with tufted headboard.",
+    "image_url": "/images/bed_frame_1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Garden Lounge Set",
+    "category": "outdoor",
+    "price": 125000,
+    "description": "Premium outdoor lounge furniture with waterproof cushions.",
+    "image_url": "/images/garden_lounge_1.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Marble Coffee Table",
+    "category": "living-room",
+    "price": 52000,
+    "description": "Elegant marble-top coffee table with brass legs.",
+    "image_url": "/images/coffee_table_1.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Wardrobe with Mirror",
+    "category": "bedroom",
+    "price": 95000,
+    "description": "Spacious wardrobe with full-length sliding mirror doors.",
+    "image_url": "/images/wardrobe_1.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Extendable Dining Set",
+    "category": "dining-room",
+    "price": 68000,
+    "description": "Modern extendable table set with 8 upholstered chairs.",
+    "image_url": "/images/dining_set_1.jpg"
+  }
+]
