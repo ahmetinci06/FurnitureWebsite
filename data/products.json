@@ -1,9 +1,9 @@
-[
+  [
   {
     "id": 1,
     "name": "Modern Grey Sofa Set",
     "category": "living-room",
-    "price": 85000,
+    "price": 80000,
     "description": "Contemporary sofa set with soft fabric and solid wood legs.",
     "image_url": "/images/sofa_set_1.jpg"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "name": "Classic Wooden Dining Table",
     "category": "dining-room",
-    "price": 45000,
+    "price": 50000,
     "description": "Solid oak dining table with 6 matching chairs.",
     "image_url": "/images/dining_table_1.jpg"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "name": "Minimalist TV Unit",
     "category": "living-room",
-    "price": 32000,
+    "price": 20000,
     "description": "Sleek TV stand with ample storage and cable management.",
     "image_url": "/images/tv_unit_1.jpg"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "name": "King Size Bed Frame",
     "category": "bedroom",
-    "price": 78000,
+    "price": 300000,
     "description": "Upholstered bed frame with tufted headboard.",
     "image_url": "/images/bed_frame_1.jpg"
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "name": "Wardrobe with Mirror",
     "category": "bedroom",
-    "price": 95000,
+    "price": 5000,
     "description": "Spacious wardrobe with full-length sliding mirror doors.",
     "image_url": "/images/wardrobe_1.jpg"
   },
